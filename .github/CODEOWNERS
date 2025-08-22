@@ -1,0 +1,38 @@
+# CODEOWNERS file for tracking-monitor-709
+# Global owners - will be requested for all PRs
+* @Armor-test/grp-search @Armor-test/unit-devops @Armor-test/squad-api
+
+# Directory ownership
+/deploy/ @Armor-test/squad-cloud @Armor-test/squad-cache @Armor-test/squad-performance
+/internal/ @Armor-test/team-reporting @Armor-test/squad-cloud @Armor-test/unit-design
+/pages/ @Armor-test/squad-api @Armor-test/squad-ux @Armor-test/team-logging
+/examples/ @Armor-test/team-core @Armor-test/dept-identity @Armor-test/dept-data
+/lib/ @Armor-test/squad-search @Armor-test/dept-identity
+/third_party/ @Armor-test/dept-reliability @Armor-test/team-logging
+/utils/ @Armor-test/unit-cloud @Armor-test/squad-product
+/assets/ @Armor-test/unit-design @Armor-test/squad-mobile
+/api/ @Armor-test/squad-performance @Armor-test/squad-qa
+/config/ @Armor-test/dept-reliability @Armor-test/squad-payments @Armor-test/team-research
+/hooks/ @Armor-test/squad-ml @Armor-test/dept-api @Armor-test/squad-product
+/vendor/ @Armor-test/dept-ui @Armor-test/dept-api @Armor-test/team-security
+
+# File type ownership
+*.properties @Armor-test/squad-cloud @Armor-test/grp-payments @Armor-test/squad-performance
+*.yaml @Armor-test/dept-identity @Armor-test/dept-data
+*.kt @Armor-test/dept-identity @Armor-test/dept-security @Armor-test/squad-database
+*.tf @Armor-test/squad-tooling @Armor-test/dept-automation @Armor-test/team-research
+*.json @Armor-test/squad-mobile @Armor-test/squad-performance
+*.rb @Armor-test/team-security @Armor-test/dept-notifications
+*.java @Armor-test/dept-release @Armor-test/squad-ux @Armor-test/squad-apps
+*.py @Armor-test/squad-database @Armor-test/team-security
+*.swift @Armor-test/grp-integration @Armor-test/dept-reporting
+*.graphql @Armor-test/squad-api @Armor-test/dept-data
+*.c @Armor-test/dept-data @Armor-test/squad-ux
+*.tsx @Armor-test/grp-ui @Armor-test/grp-api
+*.css @Armor-test/unit-design @Armor-test/team-reporting
+*.js @Armor-test/dept-ui @Armor-test/grp-api
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
